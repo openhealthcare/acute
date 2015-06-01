@@ -10,5 +10,7 @@ class Location(models.Location): pass
 class Allergies(models.Allergies): pass
 class Diagnosis(models.Diagnosis): pass
 class PastMedicalHistory(models.PastMedicalHistory): pass
-class Antimicrobial(models.Antimicrobial): pass
+class Treatment(models.Treatment): pass
 class Investigation(models.Investigation): pass
+
+    
