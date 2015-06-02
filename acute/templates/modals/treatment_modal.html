@@ -4,38 +4,11 @@
 {% block icon %}<i class="fa fa-flask"></i>{% endblock %}
 {% block modal_body %}
   <form class="form-horizontal">
-
-
+   {% input  label="Drug" model="editing.drug" lookuplist="antimicrobial_list" %}
    {% input  label="Dose" model="editing.dose"  %}
-   
-   
-   
-
-   
+   {% input  label="Route" model="editing.route" lookuplist="antimicrobial_route_list" %}
    {% datepicker  label="Start Date" model="editing.start_date"  %}
-   
-   
-
-   
    {% datepicker  label="End Date" model="editing.end_date"  %}
-   
-   
-
-   {% input  label="Route" model="editing.route"  %}
-   
-   
-   
-
-   {% input  label="Drug" model="editing.drug"  %}
-   
-   
-   
-
-   {% input  label="Frequency" model="editing.frequency"  %}
-   
-   
-   
-
-
+   {% input  label="Frequency" model="editing.frequency" lookuplist="antimicrobial_frequency_list" %}
   </form>
 {% endblock %}
