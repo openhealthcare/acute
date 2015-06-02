@@ -6,11 +6,11 @@ from acute import models
 list_columns = [
     models.Demographics,
     models.Location,
-    models.Allergies,
-    models.Diagnosis,
+    models.Clerking,
     models.PastMedicalHistory,
-    models.Treatment,
-    models.Investigation
+    models.Diagnosis,
+    models.Plan,
+    models.Rescuscitation
 ]
 
 list_schemas = {
