@@ -158,6 +158,7 @@ INSTALLED_APPS = (
     'opal.core.search',
     'acute',
     'django.contrib.admin',
+    'referral',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -238,6 +239,8 @@ INTEGRATING = False
 #GLOSSOLALIA_NAME = 'acute'
 
 # OPAL required Django settings you should edit
+
+REFERRAL_MENU_ITEM = False
 
 CONTACT_EMAIL = []
 DEFAULT_FROM_EMAIL = 'hello@example.com'

@@ -11,3 +11,9 @@ class Application(application.OpalApplication):
         'js/acute/controllers/acute_take_discharge.js',
         'js/opal/controllers/discharge.js',
     ]
+    menuitems = [
+        dict(
+            href='/referrals/#/acute_take', display='Clerking', icon='fa fa-mail-forward',
+            activepattern='/referrals/#/acute_take')
+    ]
+
