@@ -8,5 +8,6 @@ class Application(application.OpalApplication):
     flow_module   = 'acute.flow'
     javascripts   = [
         'js/acute/routes.js',
-        'js/opal/controllers/discharge.js'
+        'js/acute/controllers/acute_take_discharge.js',
+        'js/opal/controllers/discharge.js',
     ]

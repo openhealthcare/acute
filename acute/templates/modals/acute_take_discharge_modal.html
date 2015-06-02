@@ -1,0 +1,48 @@
+{% extends 'modal_base.html' %}
+{% load forms %}
+{% block icon_name %}fa fa-check{% endblock %}
+{% block title %}Next stage{% endblock %}
+{% block modal_body %}
+
+  <!-- Initial State -->
+  <div ng-show="state == 'initial'">
+    <p class="lead">What is happening <b>next</b> to this patient?</p>
+    <center>
+      <button class="btn btn-primary btn-lg" ng-click="discharge()">Discharge</button>
+      <button ng-hide="episode.hasTag('aau')" class="btn btn-primary btn-lg" ng-click="move_to_aau()">Move to AAU</button>
+      <button class="btn btn-primary btn-lg" ng-click="refer_to_team()">Refer to team</button>
+    </center>
+  </div>
+  
+  <div ng-show="state == 'referring'">
+    <p class="lead">What team would you like to <b>refer</b> this patient to?</p>
+    <form class="form form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-3">Team:</label>
+      <div class="col-sm-8">
+        <select class="form-control" ng-model="meta.target_team">
+          <option value="">---------</option>
+          {% for team in teams %}{% if not team.parent %}{% if team.direct_add %}
+          {% if team.has_subteams %}
+          {% for subteam in team.team_set.all %}
+            <option value="{{subteam.name}}">{{ team.title }} / {{ subteam.title }}</option>
+          {% endfor %}
+          {% else %}
+            {% if not team.name == 'aau' %}{% if not team.name == 'take' %}
+              <option value="{{team.name}}">{{team.title}}</option>
+            {% endif %}{% endif %}
+          {% endif %}
+          {% endif %}{% endif %}{% endfor %}
+        </select>
+      </div>
+    </div>
+    </form>
+    <center>
+      <button class="btn btn-primary btn-lg" ng-click="refer()">Refer</button>
+    </center>
+  </div>
+
+
+{% endblock %}
+{% block modal_save %}{% endblock %}
+{% block modal_another %}{% endblock %}
