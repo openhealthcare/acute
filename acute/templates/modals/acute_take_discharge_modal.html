@@ -8,9 +8,18 @@
   <div ng-show="state == 'initial'">
     <p class="lead">What is happening <b>next</b> to this patient?</p>
     <center>
-      <button class="btn btn-primary btn-lg" ng-click="discharge()">Discharge</button>
-      <button ng-hide="episode.hasTag('aau')" class="btn btn-primary btn-lg" ng-click="move_to_aau()">Move to AAU</button>
-      <button class="btn btn-primary btn-lg" ng-click="refer_to_team()">Refer to team</button>
+      <button class="btn btn-primary btn-lg" ng-click="discharge()">
+        {% icon 'fa-home' %}
+        Discharge
+      </button>
+      <button ng-hide="episode.hasTag('aau')" class="btn btn-primary btn-lg" ng-click="move_to_aau()">
+        {% icon 'fa-hospital-o' %}
+        AAU
+      </button>
+      <button class="btn btn-primary btn-lg" ng-click="refer_to_team()">
+        {% icon 'fa-mail-forward' %}
+        Refer to team
+      </button>
     </center>
   </div>
   
@@ -38,7 +47,10 @@
     </div>
     </form>
     <center>
-      <button class="btn btn-primary btn-lg" ng-click="refer()">Refer</button>
+      <button class="btn btn-primary btn-lg" ng-click="refer()">
+        {% icon 'fa-mail-forward' %}
+        Refer
+      </button>
     </center>
   </div>
 
