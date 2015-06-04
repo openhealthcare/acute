@@ -1,1 +1,40 @@
-[{"pk": 1, "model": "guidelines.guideline", "fields": {"diagnosis": [59, 63, 105], "name": "Adult pneumonia guideline (full)", "source": "BTS", "link": "https://www.brit-thoracic.org.uk/document-library/clinical-information/pneumonia/adult-pneumonia/bts-guidelines-for-the-management-of-community-acquired-pneumonia-in-adults-2009-update/"}}, {"pk": 2, "model": "guidelines.guideline", "fields": {"diagnosis": [63], "name": "Adult pneumonia guideline (quick reference)", "source": "BTS", "link": "https://www.brit-thoracic.org.uk/document-library/clinical-information/pneumonia/adult-pneumonia/a-quick-reference-guide-bts-guidelines-for-the-management-of-community-acquired-pneumonia-in-adults/"}}, {"pk": 3, "model": "guidelines.guideline", "fields": {"diagnosis": [63], "name": "Children pneumonia guideline (full)", "source": "BTS", "link": "https://www.brit-thoracic.org.uk/document-library/clinical-information/pneumonia/paediatric-pneumonia/bts-guidelines-for-the-management-of-community-acquired-pneumonia-in-children-update-2011/"}}, {"pk": 1, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-05-26T18:13:21.136Z", "guideline": 1, "user": 1}}, {"pk": 2, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-05-26T18:13:21.136Z", "guideline": 1, "user": 1}}, {"pk": 3, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-05-26T18:13:21.136Z", "guideline": 3, "user": 1}}, {"pk": 4, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-05-26T18:13:21.136Z", "guideline": 2, "user": 1}}, {"pk": 5, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-05-26T18:13:21.136Z", "guideline": 3, "user": 1}}, {"pk": 6, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-05-26T18:13:21.136Z", "guideline": 1, "user": 1}}, {"pk": 7, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-05-26T18:13:21.136Z", "guideline": 1, "user": 1}}, {"pk": 8, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-05-26T18:13:21.136Z", "guideline": 1, "user": 1}}, {"pk": 9, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-05-26T22:39:33.359Z", "guideline": 1, "user": 8}}, {"pk": 10, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-05-27T22:01:35.797Z", "guideline": 3, "user": 8}}, {"pk": 11, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-05-27T22:08:20.033Z", "guideline": 3, "user": 1}}, {"pk": 12, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-05-27T22:08:21.839Z", "guideline": 2, "user": 1}}, {"pk": 13, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-06-02T14:14:55.562Z", "guideline": 3, "user": 11}}, {"pk": 14, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-06-02T14:15:03.164Z", "guideline": 2, "user": 11}}, {"pk": 15, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-06-04T10:21:39.320Z", "guideline": 2, "user": 11}}, {"pk": 16, "model": "guidelines.guidelineconsultation", "fields": {"consulted": "2015-06-04T10:21:50.380Z", "guideline": 2, "user": 11}}]
+[
+    {
+        "fields": {
+            "diagnosis": [
+                59,
+                63,
+                105
+            ],
+            "link": "https://www.brit-thoracic.org.uk/document-library/clinical-information/pneumonia/adult-pneumonia/bts-guidelines-for-the-management-of-community-acquired-pneumonia-in-adults-2009-update/",
+            "name": "Adult pneumonia guideline (full)",
+            "source": "BTS"
+        },
+        "model": "guidelines.guideline",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "diagnosis": [
+                63
+            ],
+            "link": "https://www.brit-thoracic.org.uk/document-library/clinical-information/pneumonia/adult-pneumonia/a-quick-reference-guide-bts-guidelines-for-the-management-of-community-acquired-pneumonia-in-adults/",
+            "name": "Adult pneumonia guideline (quick reference)",
+            "source": "BTS"
+        },
+        "model": "guidelines.guideline",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "diagnosis": [
+                63
+            ],
+            "link": "https://www.brit-thoracic.org.uk/document-library/clinical-information/pneumonia/paediatric-pneumonia/bts-guidelines-for-the-management-of-community-acquired-pneumonia-in-children-update-2011/",
+            "name": "Children pneumonia guideline (full)",
+            "source": "BTS"
+        },
+        "model": "guidelines.guideline",
+        "pk": 3
+    }
+]
