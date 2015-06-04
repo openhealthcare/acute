@@ -9,6 +9,7 @@ from acute import models
 class ClerkingRoute(ReferralRoute):
     name         = 'Acute Take'
     description  = 'Add a patient to the Acute Take list'
+    page_title   = 'Acute Admissions'
     target_teams = ['take']
     success_link = '/#/list/take'
     verb = 'Book in'
