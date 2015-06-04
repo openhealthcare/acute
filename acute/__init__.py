@@ -13,7 +13,7 @@ class Application(application.OpalApplication):
     ]
     menuitems = [
         dict(
-            href='/referrals/#/acute_take', display='Clerking', icon='fa fa-mail-forward',
+            href='/referrals/#/acute_take', display='Admissions', icon='fa fa-mail-forward',
             activepattern='/referrals/#/acute_take')
     ]
 
