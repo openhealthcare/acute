@@ -22,3 +22,5 @@ dj-static==0.0.5
 
 -e git://github.com/openhealthcare/opal.git@master#egg=opal
 -e git://github.com/openhealthcare/opal-referral.git@route_page_titles#egg=opal_referral
+-e git://github.com/openhealthcare/opal-guidelines.git@#egg=opal_guidelines
+

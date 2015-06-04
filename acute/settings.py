@@ -159,6 +159,7 @@ INSTALLED_APPS = (
     'acute',
     'django.contrib.admin',
     'referral',
+    'guidelines',
 )
 
 # A sample logging configuration. The only tangible logging
