@@ -16,11 +16,11 @@ class ClerkingRoute(ReferralRoute):
     progressive_verb = 'Booking in'
     past_verb = 'Booked in'
 
-    def post_create(self, episode, user):
-        """
-        Auto Populate clerked by
-        """
-        name = user.first_name[:1] + ' ' + user.last_name
-        models.Clerking.objects.create(episode=episode, clerked_by=name)
-        return
+    # def post_create(self, episode, user):
+    #     """
+    #     Auto Populate clerked by
+    #     """
+    #     name = user.first_name[:1] + ' ' + user.last_name
+    #     models.Clerking.objects.create(episode=episode, clerked_by=name)
+    #     return
         
