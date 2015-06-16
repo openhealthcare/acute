@@ -151,7 +151,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'axes',
     'reversion',
-    'south',
+#    'south',
     'rest_framework',
     'compressor',
     'opal',
@@ -215,11 +215,6 @@ else:
     EMAIL_PORT = 1025
     EMAIL_HOST = 'localhost'
 
-TEST_RUNNER = 'django_test_coverage.runner.CoverageTestSuiteRunner'
-COVERAGE_EXCLUDE_MODULES = ('acute.migrations', 'acute.tests',
-                            'acute.local_settings',
-                            'opal.migrations', 'opal.tests',
-                            'opal.wsgi')
 
 
 # Begins OPAL Settings
