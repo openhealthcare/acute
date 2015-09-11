@@ -8,6 +8,7 @@ list_columns = [
     models.Location,
     models.Diagnosis,
     models.PastMedicalHistory,
+    models.Investigation,
     models.Plan,
     models.Rescuscitation
 ]
