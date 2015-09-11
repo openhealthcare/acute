@@ -15,6 +15,7 @@ class Investigation(models.Investigation): pass
 
 class Clerking(models.EpisodeSubrecord):
     _icon = 'fa fa-user'
+    _title = 'Seen by'
     
     referrer   = fields.CharField(max_length=200, blank=True, null=True)
     clerked_by = fields.CharField(max_length=200, blank=True, null=True)
