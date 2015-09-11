@@ -30,6 +30,7 @@ class Plan(models.EpisodeSubrecord):
 
     
 class Rescuscitation(models.EpisodeSubrecord):
+    _title = 'Resus Status'
     _icon = 'fa fa-warning'
 
     status = fields.CharField(max_length=200, blank=True, null=True)
