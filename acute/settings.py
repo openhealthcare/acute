@@ -245,7 +245,7 @@ DEFAULT_DOMAIN = 'http://acute.com/'
 # Begins OPAL Settings you should edit !
 
 OPAL_BRAND_NAME = 'OPAL Acute'
-VERSION_NUMBER  = '0.0.1'
+VERSION_NUMBER  = '0.0.2'
 
 try:
     from local_settings import *
