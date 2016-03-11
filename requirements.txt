@@ -19,7 +19,6 @@ gunicorn==0.17.4
 psycopg2==2.5
 dj-static==0.0.5
 
--e git://github.com/openhealthcare/opal.git@v0.4.3#egg=opal
+-e git://github.com/openhealthcare/opal.git@v0.5.6#egg=opal
 -e git://github.com/openhealthcare/opal-referral.git@#egg=opal_referral
 -e git://github.com/openhealthcare/opal-guidelines.git@#egg=opal_guidelines
-
