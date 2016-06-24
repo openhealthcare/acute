@@ -147,6 +147,8 @@ TEMPLATE_CONTEXT_PROCESSORS= (
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
     'opal.context_processors.settings',
+    'opal.context_processors.models'
+
 )
 
 INSTALLED_APPS = (
@@ -202,8 +204,12 @@ LOGGING = {
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-DATE_FORMAT = 'Y-m-d'
-DATE_INPUT_FORMATS = ['Y-m-d']
+DATE_FORMAT = 'd/m/Y'
+DATE_INPUT_FORMATS = ['%d/%m/%Y']
+DATETIME_FORMAT = 'd/m/Y H:i:s'
+DATETIME_INPUT_FORMATS = ['%d/%m/%Y %H:%M:%S']
+# DATE_FORMAT = 'Y-m-d'
+# DATE_INPUT_FORMATS = ['Y-m-d']
 
 CSRF_COOKIE_NAME = 'XSRF-TOKEN'
 APPEND_SLASH = False

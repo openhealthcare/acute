@@ -1,12 +1,11 @@
-
 {% extends 'modal_base.html' %}
 {% load forms %}
 
 {% block icon_name %}fa fa-user{% endblock %}
 {% block modal_body %}
   <form class="form-horizontal">
-   {% input "autofocus"  label="Referrer" model="editing.referrer"  %}
-   {% input  label="Clerked By" model="editing.clerked_by"  %}
-   {% input  label="Consultant" model="editing.consultant"  %}
+   {% input "autofocus"  label="Referrer" model="editing.clerking.referrer"  %}
+   {% input  label="Clerked By" model="editing.clerking.clerked_by"  %}
+   {% input  label="Consultant" model="editing.clerking.consultant"  %}
   </form>
 {% endblock %}
