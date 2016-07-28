@@ -238,7 +238,7 @@ OPAL_LOG_OUT_DURATION = OPAL_LOG_OUT_MINUTES*60*1000
 # Begins OPAL optional settings
 # OPAL_EXTRA_HEADER = ''
 # OPAL_EXTRA_APPLICATION = ''
-
+OPAL_FLOW_SERVICE = 'AcuteFlow'
 INTEGRATING = False
 #
 # Uncomment these if you are integrating with other upstream systems via

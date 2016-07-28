@@ -2,11 +2,12 @@
 // This is step 1 of The "Next step" exit flow controller for OPAL Acute
 //
 controllers.controller(
-    'AcuteTakeDischargeCtrl', 
+    'AcuteTakeDischargeCtrl',
     function(
         $scope, $modalInstance, $modal, $rootScope, $q,
         growl,
-        options, episode, tags
+        referencedata, metadata,
+        episode, tags
     ){
         $scope.episode = episode;
         $scope.state = 'initial';
@@ -18,14 +19,14 @@ controllers.controller(
                 'DischargeEpisodeCtrl',
                 '/templates/modals/discharge_episode.html/',
                 'md',
-                {episode: episode, options: options, tags: tags}
+                {episode: episode, metadata: metadata, referencedata: referencedata, tags: tags}
             ).result.then(
                 function(r){ deferred.resolve('discharged') },
-                function(r){ deferred.reject('discharged') }                    
+                function(r){ deferred.reject('discharged') }
             );
             $modalInstance.close(deferred.promise);
         };
-        
+
         $scope.move_to_aau = function(){
             var tagging = $scope.episode.tagging[0].makeCopy();
             tagging.take = false;
@@ -35,7 +36,7 @@ controllers.controller(
                 $modalInstance.close('discharged');
             });
         };
-        
+
         $scope.refer_to_team = function(){
             $scope.state = 'referring';
         };
@@ -49,7 +50,7 @@ controllers.controller(
                 growl.success('Referred successfully');
                 $modalInstance.close('discharged');
             });
-            
+
         }
 
         // Let's have a nice way to kill the modal.

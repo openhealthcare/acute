@@ -9,6 +9,7 @@ class Application(application.OpalApplication):
     javascripts   = [
         'js/acute/routes.js',
         'js/acute/controllers/acute_take_discharge.js',
+        'js/acute/services/acute_flow.js',
         'js/opal/controllers/discharge.js',
     ]
     menuitems = [
@@ -16,4 +17,3 @@ class Application(application.OpalApplication):
             href='/referrals/#/acute_take', display='Admissions', icon='fa fa-plus',
             activepattern='/referrals/#/acute_take')
     ]
-

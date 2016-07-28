@@ -1,14 +1,7 @@
 {% load opalplugins %}
-<p
-   ng-hide="episode.category != 'inpatient'")
-   >
-  <button 
-     ng-hide="profile.readonly"
-     ng-click="dischargeEpisode(episode)"
-     class="btn btn-primary btn-sm">
+  <button ng-click="dischargeEpisode(episode)" class="btn btn-primary btn-sm">
       <i class="fa fa-check"></i>
       <span ng-show="episode.discharge_date">Confirm</span>
       Next
   </button>
-</p>
 {% application_actions %}
